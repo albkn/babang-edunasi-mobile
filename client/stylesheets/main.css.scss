@@ -1,0 +1,42 @@
+/*******************************************************
+
+  Standard ThriveTide Phone Client Stylings
+
+*******************************************************/
+
+
+//Set global variable values
+$main-color: #9F0113;
+
+//Import core ionic files
+@import 'client/stylesheets/meteoric_ionic-sass/ionic';
+@import 'client/stylesheets/meteoric_ionicons-sass/ionicons';
+
+//Container for map on Map Tracking Page
+.map-container {
+  width: 100%;
+  height: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*******************************************************
+
+  Add customised styling for non-standard shared
+  items below
+
+*******************************************************/
+
+.color-on-primary {
+  color: white;
+}
+
+.title {
+  color: white;
+  font-family: 'Raleway';
+  font-weight: bold;
+}

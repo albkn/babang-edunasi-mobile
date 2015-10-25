@@ -1,0 +1,5 @@
+@mixin bg-transition-ease{
+    -webkit-transition: background .3s ease;
+      -moz-transition: background .3s ease;
+        transition: background .3s ease;
+}

@@ -1,0 +1,8 @@
+<template name="layout">
+  {{#ionBody}}
+    {{> ionNavBar class="color-primary"}}
+    {{#ionNavView}}
+      {{> yield}}
+    {{/ionNavView}}
+  {{/ionBody}}
+</template>

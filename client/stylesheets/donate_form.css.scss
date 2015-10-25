@@ -1,0 +1,51 @@
+@import 'colors.css.scss';
+@import 'mixins.css.scss';
+
+.donate-form {
+  text-align: center;
+
+  input {
+    font-size: 1.4em;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .submit-form:hover {
+    background-color: $hover-dark-green;
+  }
+}
+
+.submit-form {
+  @include bg-transition-ease;
+  text-align: center;
+  background-color: $dark-green;
+  color: white;
+   font-size: 1.4em;
+    padding: 20px;
+  width: 100%;
+}
+
+.gold {
+  background-color: $gold;
+}
+
+.tutor-form {
+  height: 250px;
+  background-color: $light-yellow;
+  padding: 20px;
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .submit-form:hover {
+    background-color: $hover-dark-green;
+  }
+}
+
+.incentive {
+  background-color: $light-green;
+  height: 300px !important;
+}

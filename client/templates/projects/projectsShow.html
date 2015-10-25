@@ -1,0 +1,29 @@
+<template name="projectsShow">
+  {{#contentFor "headerButtonLeft"}}
+    {{> ionNavBackButton text=false path="homepage"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Detail Proyek</h1>
+  {{/contentFor}}
+  {{#ionView}}
+    {{#ionContent}}
+      
+      <div style="background: url('{{project.thumbnailUrl}}') center center no-repeat;" class="bigger-banner">
+        <p style="color: white; font-size: 24px; font-family: 'Open Sans'">{{project.name}}</p>
+      </div>
+
+      <div class="padding">
+        <h3>Cerita Proyek</h3>
+        <p style="font-family: 'Open Sans'">
+          {{project.story}}
+        </p>
+      </div>
+
+      <div class="padding">
+        <h3>Donasi</h3>
+        {{> fundingChart goal=project.goal raised=project.raised}}
+        {{> donateForm _id=project._id goal=project.goal raised=project.raised}}
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

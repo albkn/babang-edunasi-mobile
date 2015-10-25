@@ -1,0 +1,14 @@
+<template name="homepage">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Proyek Aktif</h1>
+  {{/contentFor}}
+  {{#ionView}}
+    {{#ionContent}}
+      {{#each projects}}
+        <div style="background:url('{{this.thumbnailUrl}}') no-repeat center center" class="banner-pictures" data-id="{{this._id}}">
+          <p style="font-size: 24px; color: white; font-family: 'Open Sans'" data-id="{{this._id}}">{{this.name}}</p> 
+        </div>
+      {{/each}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

@@ -1,0 +1,15 @@
+{
+  "public": {
+    "companyId": "EDFcRws3HfS2apTMr",
+    "companyhubUrl": "http://testedunasi.meteor.com/",
+
+    "AppStyle": {
+      "collectionName": "app-style.consumerMobile",
+      "publicationName": "AppStyle/consumerMobile",
+      "serverUrl": "http://testedunasi.meteor.com/"
+    }
+  },
+  "private": {
+
+  }
+}

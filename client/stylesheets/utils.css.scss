@@ -1,0 +1,80 @@
+// Variables
+$margin-increment: 8px;
+
+// Text aligns
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+.text-nowrap  { white-space: nowrap; }
+
+// Text transforms
+.text-lowercase   { text-transform: lowercase; }
+.text-uppercase   { text-transform: uppercase; }
+.text-capitalize  { text-transform: capitalize; }
+
+// Widths & heights
+.full-width   { width: 100%; }
+.half-width   { width: 50%; }
+.full-height  { height: 100%; }
+.half-height  { height: 50%; }
+
+// Margin positives
+.margin         { margin: $margin-increment; }
+.margin-top     { margin-top: $margin-increment; }
+.margin-right   { margin-right: $margin-increment; }
+.margin-bottom  { margin-bottom: $margin-increment; }
+.margin-left    { margin-left: $margin-increment; }
+.margin-vertical {
+	@extend .margin-top;
+  @extend .margin-bottom;
+}
+.margin-horizontal {
+	@extend .margin-left;
+  @extend .margin-right;
+}
+
+// Margin negatives
+.margin-negative        { margin: -$margin-increment; }
+.margin-negative-top    { margin-top: -$margin-increment; }
+.margin-negative-right  { margin-right: -$margin-increment; }
+.margin-negative-bottom { margin-bottom: -$margin-increment; }
+.margin-negative-left   { margin-left: -$margin-increment; }
+.margin-negative-vertical {
+  @extend .margin-negative-top;
+  @extend .margin-negative-bottom;
+}
+.margin.negative-horizontal {
+  @extend .margin-negative-left;
+  @extend .margin-negative-right;
+}
+
+// Margin zeroes
+.margin-zero         { margin: 0px; }
+.margin-zero-top     { margin-top: 0px; }
+.margin-zero-right   { margin-right: 0px; }
+.margin-zero-bottom  { margin-bottom: 0px; }
+.margin-zero-left    { margin-left: 0px; }
+.margin-zero-vertical {
+	@extend .margin-zero-top;
+  @extend .margin-zero-bottom;
+}
+.margin-zero-horizontal {
+	@extend .margin-zero-left;
+  @extend .margin-zero-right;
+}
+
+// Padding zeroes
+.padding-zero         { padding: 0px !important; }
+.padding-zero-top     { padding-top: 0px; }
+.padding-zero-right   { padding-right: 0px; }
+.padding-zero-bottom  { padding-bottom: 0px; }
+.padding-zero-left    { padding-left: 0px; }
+.padding-zero-vertical {
+	@extend .padding-zero-top;
+  @extend .padding-zero-bottom;
+}
+.padding-zero-horizontal {
+	@extend .padding-zero-left;
+  @extend .padding-zero-right;
+}
